@@ -5,7 +5,7 @@ on:
     branches: [ "main" ]
 
 env:
-  AWS_ROLE: arn:aws:iam::637423443295:role/role-for-githubaction
+  AWS_ROLE: ${{ secrets.AWS_DEV_GITHUB_ACTION_ROLE }}
   AWS_REGION: us-east-1               
 
 permissions:
